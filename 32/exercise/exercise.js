@@ -5,6 +5,7 @@ const person = {
   age: 25,
 };
 
-const json = JSON.stringify(person);
+let {firstName, lastName, ...props} = person;
+let json = JSON.stringify(props);
 
 console.log(json); // Should return: { id: 1, age: 25 }
