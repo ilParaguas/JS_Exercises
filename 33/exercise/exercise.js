@@ -5,5 +5,5 @@ class Person {
   }
 }
 
-const developer = new Person("Mario", "Rossi");
-console.log(developer.firstName + " " + developer.lastName);
+let developer = new Person("Mario", "Rossi");
+console.log(`first name ${developer.firstName}, second name ${developer.lastName}`);
