@@ -1,5 +1,11 @@
 function uncompletedNotes(notes) {
-  // ...
+  let todosList = [];
+  notes.forEach((note) => {
+    note.todos.forEach((el) => todosList.push(el));
+  });
+  
+  let todos = todosList.filter((todo) => todo.done == false);
+  return todos;
 }
 
 const notes = [
@@ -52,4 +58,4 @@ const notes = [
   },
 ];
 
-uncompletedNotes(notes);
+console.log(uncompletedNotes(notes));
