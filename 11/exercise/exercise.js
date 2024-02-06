@@ -1,5 +1,11 @@
 function adultFilter(persons) {
-  // ...
+  let ofAge = [];
+  for(let pers of persons) {
+    if(pers.age >= 18) {
+      ofAge.push(pers);
+    }
+  }
+  return ofAge;
 }
 
 const persons = [
