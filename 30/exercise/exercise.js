@@ -10,8 +10,9 @@ class Person {
     return JSON.stringify(this);
   }
 
-  fromJson (json) {
-    return JSON.parse(json);
+  fromJson(json) {
+    let res = JSON.parse(json);
+    console.log(typeof res);
   }
 }
 
