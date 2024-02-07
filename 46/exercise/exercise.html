@@ -20,5 +20,8 @@
 </html>
 
 <script>
-  // code here
+  const formInput = document.querySelectorAll(".form-input");
+  for(let i = 0; i < formInput.length; i++) {
+    console.log(`${formInput[i].id}: ${formInput[i].value}`);
+  }
 </script>
